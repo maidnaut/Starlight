@@ -1,0 +1,15 @@
+<%- include('../globals/header.ejs'); %>
+<div class="profile-banner">
+    <img src="https://i.pinimg.com/originals/29/c5/a1/29c5a195f374e6d595da71e3d6254a81.jpg">
+</div>
+<div class="row justify-content-md-center">
+	<div class="col-9 panel">
+        <div class="profile-avatar">
+            <img src="<%= data['avatar'] %>" style="float: left;">
+        </div>
+        <div class="post-ident gray-text">
+            <b><%= data['username'] %></b>
+            <span class="smalltext">@<%= data['ident'] %></span>
+        </div>
+    </div>
+</div>
