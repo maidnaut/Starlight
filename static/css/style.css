@@ -1,0 +1,84 @@
+body {
+    background: #000;
+    color: #FFF;
+}
+button {
+    border: none !important;
+    background: none !important;
+}
+
+input {
+    border: 1px solid #000;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    animation-name: flash_border;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.postbox textarea {
+    color: #fff;
+    border: 1px solid #40404a;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(25px);
+}
+
+.postbox input[type="submit"] {
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(100px);
+    border: 1px solid #40404a;
+    color: #fff;
+}
+.navbar {
+    border-bottom: 1px solid #40404a;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(25px);
+    z-index: 9001;
+}
+.sidebar {
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(25px);
+}
+.sidebar:after {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 13px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    border-right: 1px solid #40404a;
+    pointer-events: none;
+}
+
+.panel {
+    border-top: 1px solid #40404a;
+    border-bottom: 1px solid #40404a;
+    background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(100px);
+    margin-bottom: -4px;
+    filter: drop-shadow(1px 1px 4px #000);
+}
+
+
+/* Profile */
+.profile-banner img {
+    float: left;
+    width: calc(100% - 42px);
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: -22px;
+    margin-left: 54px;
+}
+.profile-avatar img {
+    border-radius: 100px;
+    max-width: 128px;
+    height: auto;
+    float: left;
+    margin-left: 16px;
+    margin-right: 16px;
+    position: relative;
+    top: -64px;
+}
