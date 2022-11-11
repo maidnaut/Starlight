@@ -1,0 +1,23 @@
+<%- include('../globals/header-nonav.ejs'); %>
+<div class="row justify-content-md-center">
+	<div class="col-6 panel">
+	
+		<% if(session.userid != undefined) { %>
+
+			<h1>Hi User, Welcome</h1>
+
+			<a href="/logout" class="btn btn-primary">Logout</a>
+
+		<% } else { %>
+			<div class="login">
+				<h1>Login</h1>
+				<form action="/login" method="post">
+					<i class="fas fa-user"></i> <input type="text" name="email" placeholder="Email" id="email" required> <br>
+					<i class="fas fa-lock"></i> <input type="password" name="password" placeholder="Password" id="password" required> <br>
+					<input type="submit" value="Login">
+				</form>
+			</div>
+		<% } %>
+
+	</div>
+</div>
